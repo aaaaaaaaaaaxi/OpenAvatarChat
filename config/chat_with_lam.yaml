@@ -14,7 +14,7 @@ default:
     handler_configs:
       LamClient:
         module: client/ws_lam_client/ws_lam_client_handler
-        asset_path: "lam_samples/barbara.zip"
+        asset_path: "lam_samples/zhangxu.zip"
         # max time a session will last for
         connection_ttl: 900
         upstream_mode: 'ws'
@@ -39,6 +39,7 @@ default:
         voice: "longxiaocheng"
         model_name: "cosyvoice-v1"
         # api_key: "" # default=os.getenv("DASHSCOPE_API_KEY")
+        api_key: "sk-79cb56da3ea14f0e86b45451b92186e6"
       LLMOpenAICompatible:
         enabled: True
         module: llm/openai_compatible/llm_handler_openai_compatible
@@ -51,6 +52,7 @@ default:
         # api_url: 'http://127.0.0.1:11434/v1' # ollama
         # api_url: 'https://generativelanguage.googleapis.com/v1beta/openai/'
         # api_key: "" # default=os.getenv("DASHSCOPE_API_KEY")
+        api_key: "sk-79cb56da3ea14f0e86b45451b92186e6"
       # Dify:
       #   enabled: True
       #   module: llm/dify/llm_handler_dify
