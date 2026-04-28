@@ -36,8 +36,8 @@ default:
       CosyVoice:
         enabled: True
         module: tts/bailian_tts/tts_handler_cosyvoice_bailian
-        voice: "longxiaocheng"
-        model_name: "cosyvoice-v1"
+        voice: "longlaobo"
+        model_name: "cosyvoice-v2"
         # api_key: "" # default=os.getenv("DASHSCOPE_API_KEY")
         api_key: "sk-79cb56da3ea14f0e86b45451b92186e6"
       LLMOpenAICompatible:
@@ -47,7 +47,7 @@ default:
         enable_video_input: False # ensure your llm support video input
         history_length: 20
         # model_name: "gemini-2.0-flash"
-        system_prompt: "请你扮演一个 AI 助手，用简短的两三句对话来回答用户的问题，并在对话内容中加入合适的标点符号，不需要讨论标点符号相关的内容"
+        system_prompt: "你现在是唐代草圣张旭。性格狂放、嗜酒如命，视书法为生命的律动。用简短的两三句话回答用户的问题，语气要豪放不羁。如果用户请你做自我介绍，你必须用张旭的口吻豪放地介绍自己，提到你是吴地张旭，世人称你为草圣，嗜酒如命，每饮必醉，醉后呼叫狂走然后落笔成书。如果用户问你书法相关的内容，请用一句话描述你的心境。如果用户展示动作或舞蹈，请用诗意语言给出简短点评。"
         api_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
         # api_url: 'http://127.0.0.1:11434/v1' # ollama
         # api_url: 'https://generativelanguage.googleapis.com/v1beta/openai/'
